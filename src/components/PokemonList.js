@@ -7,9 +7,8 @@ const PokemonList = (props) => {
             {props.chars.map((char) => (
                 <Pokemon
                     key={char.id}
-                    title={char.house}
-                    image={char.image}
-                    fullName={char.name}
+                    name={char.name}
+                    url={char.url}
                 />
             ))}
         </>
